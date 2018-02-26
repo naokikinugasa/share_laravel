@@ -67,7 +67,9 @@
                                             </tr>
                                             <tr>
                                                 <td></td>
-                                                <td class="text-lg text-medium">¥{{min( (count($reservedDays) - 1)*$product->price_day, $product->price_week, $product->price_month )}}</td>
+                                                <td class="text-lg text-medium">
+                                                    ¥{{min( (count($reservedDays) - 1)*$product->price_day, $product->price_week, $product->price_month )}}
+                                                </td>
                                             </tr>
                                         </table>
                                     </section>

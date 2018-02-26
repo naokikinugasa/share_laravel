@@ -20,6 +20,13 @@ class ReservationsController extends Controller
         $user = Auth::user();
         $query = $request->query();
         $product = Product::findOrFail($id);
+
+        if (!isset($product->price_week)) {
+            $product->price_week = 100000000000000;
+        } elseif (!isset($product->price_month)) {
+            $product->price_month = 100000000000000;
+        }
+
         return view('reservations.show2', ["product" => $product, "query" => $query, "user" => $user]);
     }
 
@@ -37,8 +44,7 @@ class ReservationsController extends Controller
 
 
         $title = '【予約確定】Shareの予約が確定しました。';
-        $text = '倉庫番号：  17
-        鍵番号：    7572';
+        $text = '';
         Mail::to('nktng117@gmail.com')->send(new RentSent($title, $text));
 
         return view('thanksRent', compact('user'));
