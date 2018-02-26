@@ -16,10 +16,10 @@ class RentSent extends Mailable
      *
      * @return void
      */
-    public function __construct($name, $text)
+    public function __construct($title, $text)
     {
         //
-        $this->title = sprintf('%sさん、ありがとうございます。', $name);
+        $this->title = $title;
         $this->text = $text;
     }
 

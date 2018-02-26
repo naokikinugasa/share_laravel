@@ -36,9 +36,10 @@ class ReservationsController extends Controller
         endforeach;
 
 
-        $name = 'ララベル太郎';
-        $text = 'これからもよろしくお願いいたします。';
-        Mail::to('s1410568@u.tsukuba.ac.jp')->send(new RentSent($name, $text));
+        $title = '【予約確定】Shareの予約が確定しました。';
+        $text = '倉庫番号：  17
+        鍵番号：    7572';
+        Mail::to('nktng117@gmail.com')->send(new RentSent($title, $text));
 
         return view('thanksRent', compact('user'));
     }
