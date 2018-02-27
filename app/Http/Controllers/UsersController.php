@@ -28,7 +28,7 @@ class UsersController extends Controller
         foreach ($reservations as $reservation) {
             $products[$reservation->product_id] = $reservation->product;
         }
-        return view("users.renting", ['user' => $user], ['products' => $products]);
+        return view("users.renting", compact('user', 'products', 'reservations'));
     }
 
     public function listing()

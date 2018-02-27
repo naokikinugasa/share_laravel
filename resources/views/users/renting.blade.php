@@ -8,36 +8,29 @@
             <table class="table">
                 <thead>
                 <tr>
+                    {{--//TODO:レンタル期間を過ぎたら自動で非表示--}}
                     <th>レンタル中</th>
                     <th class="text-center">返却日</th>
                 </tr>
                 </thead>
                 <tbody>
-                @foreach ($products as $product)
+                @foreach ($reservations as $reservation)
+                    @php($product = $reservation->product)
                     <tr>
                         <td>
                             <div class="product-item"><a class="product-thumb" href="/products/{{$product->id}}"><img src="{{$product->pic_thum()}}" alt="Product"></a>
                                 <div class="product-info">
-                                    <h4 class="product-title"><a href="shop-single.html">{{$product->title}}</a></h4>
-                                    <div class="text-lg text-medium text-muted">{{$product->price}}</div>
-                                    @php($i = 0)
-                                    @foreach($product->reservations as $reservation)
-                                        @if($i === 0)
-                                            @php($start_date = $reservation->date)
-                                        @elseif($i === (count($product->reservations) - 1))
-                                            @php($end_date = $reservation->date)
-                                        @endif
-                                        @php($i++)
-                                    @endforeach
+                                    <h4 class="product-title"><a href="/products/{{$product->id}}">{{$product->title}}</a></h4>
                                     レンタル期間：
-                                    {{$start_date}} ~ {{$end_date}}
+                                    {{$reservation->start_date}} ~ {{$reservation->end_date}}
+                                    <div class="text-lg text-medium">¥{{$reservation->price}}</div>
                                     {{--<div>Availability:--}}
                                     {{--<div class="d-inline text-success">In Stock</div>--}}
                                     {{--</div>--}}
                                 </div>
                             </div>
                         </td>
-                        <td class="text-center" style="color: red;">{{$end_date}}</td>
+                        <td class="text-center" style="color: red;">{{$reservation->end_date}}</td>
                     </tr>
                 @endforeach
                 </tbody>

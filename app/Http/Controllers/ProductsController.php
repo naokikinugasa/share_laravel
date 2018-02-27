@@ -35,7 +35,7 @@ class ProductsController extends Controller
         $calendar = new Calendar($t);
         $product = Product::findOrFail($id);
         $reservedDates = array();
-        foreach ($product->reservations as $reservation) {
+        foreach ($product->reservated_days as $reservation) {
             array_push($reservedDates, $reservation->date);
         }
         return view('products.show2', ['product' => $product, "calendar" => $calendar, 'user' => $user, 'reservedDates' => $reservedDates, 't' =>$t]);

@@ -30,4 +30,21 @@ class Helper
                 return "non-category";
         }
     }
+
+    public static function countMinPrice($day, $week, $month, $days) {
+        if (!isset($week)) {
+            $week = 10000000;
+        }
+        if (!isset($month)) {
+            $month = 10000000;
+        }
+
+        if ($days > 1) {
+            $price = min($days*$day, $week, $month);
+        } else {
+            $price = $day;
+        }
+
+        return $price;
+    }
 }

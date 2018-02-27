@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use App\Reservated_day;
 use App\Reservation;
 use Dotenv\Validator;
 use Illuminate\Http\Request;
@@ -21,12 +22,6 @@ class ReservationsController extends Controller
         $query = $request->query();
         $product = Product::findOrFail($id);
 
-        if (!isset($product->price_week)) {
-            $product->price_week = 100000000000000;
-        } elseif (!isset($product->price_month)) {
-            $product->price_month = 100000000000000;
-        }
-
         return view('reservations.show2', ["product" => $product, "query" => $query, "user" => $user]);
     }
 
@@ -35,12 +30,20 @@ class ReservationsController extends Controller
         $user = Auth::user();
         //TODO:同じ予約がないかチェック
         foreach ($request->day as $reservedDay) :
+        $reservatedDay = new Reservated_day();
+        $reservatedDay->product_id = $id;
+        $reservatedDay->date = $reservedDay;
+        $reservatedDay->user_id = $user->id;
+        $reservatedDay->save();
+        endforeach;
+        //TODO:予約不可能機能をつける時に分離する
         $reservation = new Reservation();
         $reservation->product_id = $id;
-        $reservation->date = $reservedDay;
         $reservation->user_id = $user->id;
+        $reservation->start_date = $request->start_date;
+        $reservation->end_date = $request->end_date;
+        $reservation->price = $request->price;
         $reservation->save();
-        endforeach;
 
 
         $title = '【予約確定】Shareの予約が確定しました。';

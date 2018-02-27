@@ -21,9 +21,9 @@ class Product extends Model
         return $this->user->avatar;
     }
 
-    public function reservations()
+    public function reservated_days()
     {
-        return $this->hasMany('App\Reservation');
+        return $this->hasMany('App\Reservated_day');
     }
 
     public function pic_thum()

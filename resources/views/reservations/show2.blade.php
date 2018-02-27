@@ -1,3 +1,4 @@
+@inject('helper', 'App\Helper')
 @extends('layouts.defalut')
 
 @section('title', '商品詳細')
@@ -48,30 +49,37 @@
                                             <tr>
                                                 <td>受取日：</td>
                                                 <td class="text-medium">{{$query["start_date"]}}</td>
+                                                <input type="hidden" name="start_date" value="{{$startDate}}">
                                             </tr>
                                             <tr>
                                                 <td>返却日：</td>
                                                 <td class="text-medium">{{$query["end_date"]}}</td>
+                                                <input type="hidden" name="end_date" value="{{$endDate}}">
                                             </tr>
                                             <tr>
                                                 <td>レンタル日数：</td>
-                                                <td class="text-medium">{{count($reservedDays) - 1}}日</td>
+                                                <td class="text-medium text-center">{{count($reservedDays)}}日</td>
                                             </tr>
                                             <tr>
                                                 <td>料金：</td>
-                                                <td class="text-medium">¥{{$product->price_day}}</td>
+                                                <td class="text-medium text-center">¥{{$product->price_day}}</td>
                                             </tr>
                                             <tr>
                                                 <td>手数料：</td>
-                                                <td class="text-medium">¥0</td>
+                                                <td class="text-medium text-center">¥0</td>
                                             </tr>
                                             <tr>
                                                 <td></td>
                                                 <td class="text-lg text-medium">
-                                                    ¥{{min( (count($reservedDays) - 1)*$product->price_day, $product->price_week, $product->price_month )}}
+                                                    ¥{{$helper->countMinPrice($product->price_day, $product->price_week, $product->price_month, count($reservedDays)-1)}}
+                                                    {{--¥{{min( (count($reservedDays) - 1)*$product->price_day, $product->price_week, $product->price_month )}}--}}
                                                 </td>
+                                                <input type="hidden" name="price" value="{{$helper->countMinPrice($product->price_day, $product->price_week, $product->price_month, count($reservedDays)-1)}}">
                                             </tr>
                                         </table>
+                                        @if(count($reservedDays) > 1)
+                                        <p class="text-right">※2日以上の場合、初日はレンタル料金には含まれません。</p>
+                                        @endif
                                     </section>
 
                                     <div class="collapse show" id="card" role="tabpanel">
