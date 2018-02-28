@@ -102,12 +102,12 @@
             <div class="grid-sizer"></div>
             <!-- Product-->
             @foreach ($products as $product)
-            <div class="grid-item" style="height: 420px;">
-                <div class="product-card" style="height: 420px;">
-                    <a class="product-thumb" style="height: 250px;" href="/products/{{ $product->id }}"><img src="{{$product->pic_thum()}}" style="width: 100%; height: 100%;"></a>
-                    <h3 class="product-title"><a href="/products/{{ $product->id }}">{{$product->title}}</a></h3>
+            <div class="grid-item" style="height: 320px;">
+                <div class="product-card" style="height: 320px;">
+                    <a class="product-thumb" style="height: 150px;" href="/products/{{ $product->id }}"><img src="{{$product->pic_thum()}}" style="width: 100%; height: 100%;"></a>
+                    <h3 class="product-title" style="padding-top: 10px;"><a href="/products/{{ $product->id }}">{{$product->title}}</a></h3>
                     <h4 class="product-price">¥ {{$product->price_day}}/日</h4>
-                    <div class="product-buttons">
+                    <div class="product-buttons" style="padding-top: 1px;">
                         <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="いいね"><i class="icon-heart"></i></button>
                         <a href="/products/{{ $product->id }}">
                         <button class="btn btn-outline-primary btn-sm">詳細を見る</button>

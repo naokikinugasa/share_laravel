@@ -11,8 +11,8 @@
                     {{--<div class="gallery-wrapper">--}}
                         {{--<div class="gallery-item active"><a href="/img/shop/single/01.jpg" data-hash="one" data-size="1000x667"></a></div>--}}
                     {{--</div>--}}
-                    <div class="product-carousel owl-carousel">
-                        <div data-hash="one"><img src="{{$product->pic_thum()}}" style="width: 100%;"></div>
+                    <div class="product-carousel owl-carousel" style="height: 354px;">
+                        <div data-hash="one" style="height: 354px;"><img src="{{$product->pic_thum()}}" style="width: 100%; height: 100%;"></div>
                     </div>
                 </div>
             </div>
