@@ -29,8 +29,12 @@
                 <input class="loginform" type="hidden" name="title" value="{{$data['title']}}" ><br>
                 <hr class="margin-bottom-1x">
                 <span class="h2 d-block">¥ {{$data['price_day']}}/日</span>
+                @if(isset($data['price_week']))
                 <span class="h2 d-block">¥ {{$data['price_week']}}/週</span>
+                @endif
+                @if(isset($data['price_month']))
                 <span class="h2 d-block">¥ {{$data['price_month']}}/月</span>
+                @endif
                 <input type="hidden" name="price_day" value="{{$data['price_day']}}" >
                 <input type="hidden" name="price_week" value="{{$data['price_week']}}" >
                 <input type="hidden" name="price_month" value="{{$data['price_month']}}" >

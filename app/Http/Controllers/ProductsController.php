@@ -7,6 +7,8 @@ use App\Http\Requests\UploaderRequest;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\RentSent;
 
 class ProductsController extends Controller
 {
