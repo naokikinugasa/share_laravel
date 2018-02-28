@@ -48,7 +48,8 @@ class ReservationsController extends Controller
         $title = '【予約確定】Shareの予約が確定しました。';
         $text = '予約が確定しました!
 倉庫番号と鍵番号をご確認下さい。';
-        $text2 = '予約';
+        $text2 = '予約内容
+        http://13.115.88.46/users/renting';
         Mail::to($user->email)->send(new RentSent($title, $text, $text2));
 
         $bunsyo = '予約';

@@ -104,7 +104,8 @@ class ProductsController extends Controller
         $text = '出品が完了しました！
 倉庫番号と鍵番号をご確認後、商品を倉庫に持って行ってください。
 置き場所は自由です。';
-        $text2 = '出品';
+        $text2 = '出品内容
+        http://13.115.88.46/users/listing';
         Mail::to($user->email)->send(new RentSent($title, $text, $text2));
 
         $bunsyo = '出品';
