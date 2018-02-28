@@ -24,7 +24,7 @@ class ProductsController extends Controller
 
         $products = $query->paginate(16);
 
-        return view('products.index2', ['products' => $products, 'user' => $user, 'keyword' => $keyword]);
+        return view('products.index', ['products' => $products, 'user' => $user, 'keyword' => $keyword]);
     }
 
     public function show(Request $request, $id)
@@ -38,14 +38,14 @@ class ProductsController extends Controller
         foreach ($product->reservated_days as $reservation) {
             array_push($reservedDates, $reservation->date);
         }
-        return view('products.show2', ['product' => $product, "calendar" => $calendar, 'user' => $user, 'reservedDates' => $reservedDates, 't' =>$t]);
+        return view('products.show', ['product' => $product, "calendar" => $calendar, 'user' => $user, 'reservedDates' => $reservedDates, 't' =>$t]);
     }
 
     public function category($id)
     {
         $user = Auth::user();
         $products = Product::where('category_id', $id)->paginate(16);
-        return view('products.index2', ['products' => $products, 'user' => $user]);
+        return view('products.index', ['products' => $products, 'user' => $user]);
     }
 
     public function create()

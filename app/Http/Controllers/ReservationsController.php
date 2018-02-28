@@ -22,7 +22,7 @@ class ReservationsController extends Controller
         $query = $request->query();
         $product = Product::findOrFail($id);
 
-        return view('reservations.show2', ["product" => $product, "query" => $query, "user" => $user]);
+        return view('reservations.show', ["product" => $product, "query" => $query, "user" => $user]);
     }
 
     public function store(Request $request, $id)
@@ -48,7 +48,7 @@ class ReservationsController extends Controller
 
         $title = '【予約確定】Shareの予約が確定しました。';
         $text = '';
-        Mail::to('nktng117@gmail.com')->send(new RentSent($title, $text));
+        Mail::to($user->email)->send(new RentSent($title, $text));
 
         return view('thanksRent', compact('user'));
     }

@@ -37,7 +37,7 @@
                     <div class="form-group row">
                         <label class="col-2 col-form-label" for="text-input">商品名</label>
                         <div class="col-10">
-                            <input class="form-control" type="text" id="text-input" name="title">
+                            <input class="form-control" type="text" id="text-input" name="title" placeholder="(必須)　例：プロジェクター">
                         </div>
                         @if($errors->has('title'))
                             <p style="color: red;">EROOR {{$errors->first('title')}}</p>
@@ -46,7 +46,7 @@
                     <div class="form-group row">
                         <label class="col-2 col-form-label" for="textarea-input">商品説明</label>
                         <div class="col-10">
-                            <textarea class="form-control" id="textarea-input" name="honbun" rows="5"></textarea>
+                            <textarea class="form-control" id="textarea-input" name="honbun" rows="5" placeholder="(任意)&#13;&#10;例：2年ほど前に1万円で購入したプロジェクターです。箱に入れた上に、袋に入れているので、持って行きやすいと思います。Amazonリンクはこちら。http://www.amazon.co.jp/dp/4844336479"></textarea>
                         </div>
                         @if($errors->has('honbun'))
                             <p style="color: red;">EROOR {{$errors->first('honbun')}}</p>
@@ -102,13 +102,13 @@
                     <div class="form-group row">
                         <label class="col-3 col-form-label" for="text-input">レンタル料</label>
                         <div class="col-sm-3 col-xl-3">
-                            <input class="form-control" type="text" id="text-input" name="price_day" placeholder="¥ 日">
+                            <input class="form-control" type="text" id="text-input" name="price_day" placeholder="(必須)　¥ 日">
                         </div>
                         <div class="col-sm-3 col-xl-3">
-                            <input class="form-control" type="text" id="text-input" name="price_week" placeholder="¥ 週">
+                            <input class="form-control" type="text" id="text-input" name="price_week" placeholder="(任意)　¥ 週">
                         </div>
                         <div class="col-sm-3 col-xl-3">
-                            <input class="form-control" type="text" id="text-input" name="price_month" placeholder="¥ 月">
+                            <input class="form-control" type="text" id="text-input" name="price_month" placeholder="(任意)　¥ 月">
                         </div>
                         @if($errors->has('price_day'))
                             <p style="color: red;">EROOR {{$errors->first('price_day')}}</p>
@@ -126,7 +126,7 @@
                     </form>
                     <p>*出品上の注意</p>
                     <!--        TODO:お問い合わせリンクに下線つける-->
-                    <p>ゲーム・漫画・DVD等は著作権に違反するため出品できません。これは出品しても大丈夫なのだろうかと疑問に思うものがあれば、<a href="contact.php">お問い合わせ</a>ページよりお気軽にご質問ください。</p><br>
+                    <p>ゲームソフト・漫画・DVD等は著作権に違反するため出品できません。これは出品しても大丈夫なのだろうかと疑問に思うものがあれば、<a href="contact.php">お問い合わせ</a>ページよりお気軽にご質問ください。</p><br>
 
 
                 </div>

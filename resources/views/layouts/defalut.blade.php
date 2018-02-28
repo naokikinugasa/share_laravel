@@ -19,6 +19,7 @@
     <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
     <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
     <link rel="stylesheet" type="text/css" media="screen" href="/css/vendor.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/extend.css">
     <!-- Main Template Styles-->
     <link id="mainStyles" rel="stylesheet" type="text/css" media="screen" href="/css/styles.min.css">
     <!-- Modernizr-->
@@ -711,6 +712,12 @@
         <p class="footer-copyright">© All rights reserved. Made with Share</p>
     </div>
 </footer>
+        @if( Request::path() !== "products/create" && Request::path() !== "products/create/confirm"))
+        <a class="footer-sell-btn" href="{{url('products/create')}}" style="color:#fff;text-decoration: none;">
+            <div>出品</div>
+            <i class="icon-camera"></i>
+        </a>
+        @endif
 </div>
 <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
 <!-- Backdrop-->
