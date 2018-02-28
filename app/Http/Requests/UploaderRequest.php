@@ -25,7 +25,6 @@ class UploaderRequest extends FormRequest
     {
         return [
             'title'=>'required',
-            'honbun'=>'required',
             'category_id'=>'required',
             'place'=>'required',
             'price_day'=>'required',

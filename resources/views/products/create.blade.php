@@ -48,9 +48,6 @@
                         <div class="col-10">
                             <textarea class="form-control" id="textarea-input" name="honbun" rows="5" placeholder="(任意)&#13;&#10;例：2年ほど前に1万円で購入したプロジェクターです。箱に入れた上に、袋に入れているので、持って行きやすいと思います。Amazonリンクはこちら。http://www.amazon.co.jp/dp/4844336479"></textarea>
                         </div>
-                        @if($errors->has('honbun'))
-                            <p style="color: red;">EROOR {{$errors->first('honbun')}}</p>
-                        @endif
                     </div>
                     <div class="form-group row">
                         <label class="col-2 col-form-label" for="select-input">かテゴリー</label>
