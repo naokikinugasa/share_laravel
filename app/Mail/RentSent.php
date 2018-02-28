@@ -16,11 +16,12 @@ class RentSent extends Mailable
      *
      * @return void
      */
-    public function __construct($title, $text)
+    public function __construct($title, $text, $text2)
     {
         //
         $this->title = $title;
         $this->text = $text;
+        $this->text2 = $text2;
     }
 
     /**
@@ -34,6 +35,7 @@ class RentSent extends Mailable
             ->subject($this->title)
             ->with([
                 'text' => $this->text,
+                'text2' => $this->text2,
             ]);
     }
 }

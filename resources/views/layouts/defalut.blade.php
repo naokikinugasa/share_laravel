@@ -298,7 +298,8 @@
                 <img src="{{$user->avatar}}" alt="">
             @endif
             <div class="user-info">
-                <h6 class="user-name">{{$user->name}}</h6><span class="text-sm text-white opacity-60">290 Reward points</span>
+                <h6 class="user-name">{{$user->name}}</h6>
+                {{--<span class="text-sm text-white opacity-60">290 Reward points</span>--}}
             </div></a>
         @endif
 
@@ -510,6 +511,8 @@
         <ul>
             <li class="has-megamenu"><a href="/home"><span>Home</span></a>
             </li>
+            <li><a href="/howto"><span>使い方</span></a>
+            </li>
             <li class="has-megamenu"><a href="/products"><span>全て</span></a>
             </li>
             <li class="has-megamenu"><a href="/products/category/1"><span>家電</span></a>
@@ -566,17 +569,12 @@
             </li>
             <li class="has-megamenu"><a href="/products/category/6"><span>その他</span></a>
             </li>
-            <li><a href="/products/create"><span>出品する</span></a>
-            </li>
-            <li><a href="/howto"><span>使い方</span></a>
-            </li>
         </ul>
     </nav>
     <!-- Toolbar-->
     <div class="toolbar">
         <div class="inner">
             <div class="tools">
-                <div class="search"><i class="icon-search"></i></div>
                 @if(\Illuminate\Support\Facades\Auth::check())
                     <div class="account"><a href="/users"></a><i class="icon-head"></i>
                     <ul class="toolbar-dropdown">
@@ -587,7 +585,7 @@
                             @endif
                             </div>
                             <div class="user-info">
-                                <h6 class="user-name">{{$user->name}}</h6><span class="text-xs text-muted">290 Reward points</span>
+                                <h6 class="user-name">{{$user->name}}</h6>
                             </div>
                         </li>
                         <li><a href="/users/">マイページ</a></li>
@@ -629,6 +627,7 @@
                     </div>
                     <a href="/register">新規会員登録</a>
                 @endif
+                <div class="search"><i class="icon-search"></i></div>
             </div>
         </div>
     </div>

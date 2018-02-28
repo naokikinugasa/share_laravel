@@ -97,7 +97,17 @@ class ProductsController extends Controller
         // 一時保存から本番の格納場所へ移動
         rename(public_path() . $req->thum, public_path() . "/img/product/" . $lastInsertedId . "/thum." .pathinfo($req->thum, PATHINFO_EXTENSION));
 
-        return redirect('/products');
+
+        $title = '【出品完了】Shareの出品が完了しました。';
+        $text = '出品が完了しました！
+倉庫番号と鍵番号をご確認後、商品を倉庫に持って行ってください。
+置き場所は自由です。';
+        $text2 = '出品';
+        Mail::to($user->email)->send(new RentSent($title, $text, $text2));
+
+        $bunsyo = '出品';
+        $bunsyo2 = '倉庫に商品を置きに行きましょう！';
+        return view('thanksRent', compact('user', 'bunsyo', 'bunsyo2'));
     }
 
     public function destroy($id)

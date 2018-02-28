@@ -45,12 +45,15 @@ class ReservationsController extends Controller
         $reservation->price = $request->price;
         $reservation->save();
 
-
         $title = '【予約確定】Shareの予約が確定しました。';
-        $text = '';
-        Mail::to($user->email)->send(new RentSent($title, $text));
+        $text = '予約が確定しました!
+倉庫番号と鍵番号をご確認下さい。';
+        $text2 = '予約';
+        Mail::to($user->email)->send(new RentSent($title, $text, $text2));
 
-        return view('thanksRent', compact('user'));
+        $bunsyo = '予約';
+        $bunsyo2 = '予約日になりましたら、借りに行きましょう！';
+        return view('thanksRent', compact('user','bunsyo', 'bunsyo2'));
     }
 
 
