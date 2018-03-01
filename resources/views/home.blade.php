@@ -154,6 +154,8 @@
             </div>
         </div>
     </div>
+    <div class="text-center" style="margin-top: 20px;"><a class="btn btn-primary" href="/products">もっと見る</a></div>
+
 </section>
 
 
