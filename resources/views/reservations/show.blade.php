@@ -1,7 +1,7 @@
 @inject('helper', 'App\Helper')
 @extends('layouts.defalut')
 
-@section('title', '商品詳細')
+@section('title', '予約確認')
 
 @section('content')
     <div class="container padding-bottom-3x mb-2">
@@ -14,7 +14,7 @@
                 <div class="accordion" id="accordion" role="tablist">
                     <div class="card">
                         <div class="card-header" role="tab">
-                            <h6><a href="#card" data-toggle="collapse" data-parent="#accordion"><i class="icon-columns"></i>Pay with Credit Card</a></h6>
+                            <h6><a href="#card" data-toggle="collapse" data-parent="#accordion"><i class="icon-columns"></i>予約確認</a></h6>
                         </div>
 
 

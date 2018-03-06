@@ -21,7 +21,7 @@
                 <a class="list-group-item" href="/users"><i class="icon-head"></i>Profile</a>
                 <a class="list-group-item" href="/users/renting"><i class="icon-map"></i>レンタル中の商品</a>
                 <a class="list-group-item " href="/users/listing"><i class="icon-tag"></i>出品中の商品</a>
-                <a class="list-group-item " href="/users/wishing"><i class="icon-heart"></i>いいね!一覧</a>
+                {{--<a class="list-group-item " href="/users/wishing"><i class="icon-heart"></i>いいね!一覧</a>--}}
             </nav>
         </div>
 

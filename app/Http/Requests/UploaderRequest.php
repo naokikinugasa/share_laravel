@@ -25,9 +25,9 @@ class UploaderRequest extends FormRequest
     {
         return [
             'title'=>'required',
-            'category_id'=>'required',
-            'place'=>'required',
-            'price_day'=>'required',
+            'category_id'=>'not_in: 0',
+            'place'=>'not_in: 0',
+            'price_day'=>'required | integer',
             'thum'=>'required|image',
         ];
     }
@@ -37,6 +37,9 @@ class UploaderRequest extends FormRequest
         return [
             "required" => "必須項目です。",
             "image" => "指定されたファイルが画像(jpg、png、bmp、gif、svg)ではありません。",
+            "category_id.not_in" => "カテゴリーが選択されていません。",
+            "place.not_in" => "場所が選択されていません。",
+            "integer" => "価格が整数ではありません。"
         ];
     }
 }

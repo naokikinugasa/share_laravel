@@ -28,6 +28,7 @@ class ReservationsController extends Controller
     public function store(Request $request, $id)
     {
         $user = Auth::user();
+        $product = Product::findOrFail($id);
         //TODO:同じ予約がないかチェック
         foreach ($request->day as $reservedDay) :
         $reservatedDay = new Reservated_day();
@@ -51,6 +52,12 @@ class ReservationsController extends Controller
         $text2 = '予約内容
         http://www.share-rental.com/users/renting';
         Mail::to($user->email)->send(new RentSent($title, $text, $text2));
+        $host_text = $user->name + 'さんが予約しました。
+        予約内容
+        開始日：' + $request->start_date + '
+        返却日：' + $request->end_date;
+        $host_text2 = '';
+        Mail::to($product->getOwnerEmail())->send(new RentSent($title, $host_text, $host_text2));
 
         $bunsyo = '予約';
         $bunsyo2 = '予約日になりましたら、借りに行きましょう！';

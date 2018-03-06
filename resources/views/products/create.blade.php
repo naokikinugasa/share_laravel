@@ -53,7 +53,7 @@
                         <label class="col-2 col-form-label" for="select-input">かテゴリー</label>
                         <div class="col-10">
                             <select class="form-control" id="select-input" name="category_id">
-                                <option style="display: none;">カテゴリーを選択</option>
+                                <option value="0" style="display: none;">カテゴリーを選択</option>
                                 <option value="1">{{Helper::getCategoryName(1)}}</option>
                                 <option value="2">{{Helper::getCategoryName(2)}}</option>
                                 <option value="3">{{Helper::getCategoryName(3)}}</option>
@@ -88,7 +88,7 @@
                         <label class="col-2 col-form-label" for="select-input">場所</label>
                         <div class="col-10">
                             <select class="form-control" id="select-input" name="place">
-                                <option style="display: none;">場所を選択</option>
+                                <option value="0" style="display: none;">場所を選択</option>
                                 <option>ユースペース(天２)</option>
                             </select>
                             @if($errors->has('place'))

@@ -16,6 +16,11 @@ class Product extends Model
         return $this->user->name;
     }
 
+    public function getOwnerEmail()
+    {
+        return $this->user->email;
+    }
+
     public function getOwnerAvatar()
     {
         return $this->user->avatar;

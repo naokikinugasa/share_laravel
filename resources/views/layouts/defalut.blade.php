@@ -591,7 +591,7 @@
                         <li><a href="/users/">マイページ</a></li>
                         <li><a href="/users/renting">レンタル中の商品</a></li>
                         <li><a href="/users/listing">出品中の商品</a></li>
-                        <li><a href="account-wishlist.html">いいね！一覧</a></li>
+                        {{--<li><a href="account-wishlist.html">いいね！一覧</a></li>--}}
                         <li class="sub-menu-separator"></li>
                         <li><a href="/logout" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"> <i class="icon-unlock"></i>ログアウト</a>
@@ -625,7 +625,9 @@
                 @else
                     <div class="account" style="display: none;">
                     </div>
-                    <a href="/register">新規会員登録</a>
+
+                    <a href="/login" class="sp-header-btn btn-red" style="text-decoration: none">ログイン</a>
+                    <a href="/register" class="sp-header-btn header-signup" style="text-decoration: none">新規登録</a>
                 @endif
                 <div class="search"><i class="icon-search"></i></div>
             </div>

@@ -18,3 +18,33 @@
     font-size: 60px;
     margin: -10px 0 0;
 }
+
+
+.sp-header-btn {
+    display: inline-block;
+    padding: 0 16px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.btn-red {
+    background: #ea352d;
+    border: 1px solid #ea352d;
+    color: #fff;
+}
+.pc-header-login-nav .btn-red {
+    display: block;
+}
+
+.pc-header-login-nav .sp-header-btn {
+    margin: 0;
+}
+
+
+.header-signup {
+    display: inline-block;
+    border: 1px solid #0099e8;
+    background: #fff;
+    color: #0099e8;
+}

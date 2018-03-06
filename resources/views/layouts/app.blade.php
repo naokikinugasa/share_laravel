@@ -28,7 +28,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/home') }}">
                         <img src="/img/share.png" style="width: 35%; height: 100%;">
                         {{--{{ config('app.name', 'Laravel') }}--}}
                     </a>
@@ -44,7 +44,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @guest
-                            <li><a href="{{ route('login') }}">Login</a></li>
+                            <li><a href="{{ route('login') }}">ログイン</a></li>
                             <li><a href="{{ route('register') }}">新規会員登録</a></li>
                         @else
                             <li class="dropdown">

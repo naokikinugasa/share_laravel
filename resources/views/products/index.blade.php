@@ -93,7 +93,9 @@
                 </div>
             </div>
             <div class="column">
-                <div class="shop-view"><a class="grid-view active" href="shop-grid-ns.html"><span></span><span></span><span></span></a><a class="list-view" href="shop-list-ns.html"><span></span><span></span><span></span></a></div>
+                <div class="shop-view"><a class="grid-view active" href="shop-grid-ns.html"><span></span><span></span><span></span></a>
+                    {{--<a class="list-view" href="shop-list-ns.html">--}}
+                    <span></span><span></span><span></span></a></div>
             </div>
         </div>
         <!-- Products Grid-->
@@ -108,9 +110,9 @@
                     <h3 class="product-title" style="padding-top: 10px;"><a href="/products/{{ $product->id }}">{{$product->title}}</a></h3>
                     <h4 class="product-price">¥ {{$product->price_day}}/日</h4>
                     <div class="product-buttons" style="padding-top: 1px;">
-                        <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="いいね"><i class="icon-heart"></i></button>
+                        {{--<button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="いいね"><i class="icon-heart"></i></button>--}}
                         <a href="/products/{{ $product->id }}">
-                        <button class="btn btn-outline-primary btn-sm">詳細を見る</button>
+                        <button class="btn btn-outline-primary btn-sm" style="margin-right: 0px">詳細を見る</button>
                         </a>
                     </div>
                 </div>

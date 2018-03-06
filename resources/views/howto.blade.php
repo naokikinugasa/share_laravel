@@ -5,7 +5,7 @@
 @section('content')
     <!-- Page Content-->
     <div class="text-center">
-        <p id="button1" class="btn btn-outline-primary margin-top-none">借りる人</p>
+        <p id="button1" class="btn btn-primary margin-top-none">借りる人</p>
         <p id="button2" class="btn btn-outline-primary margin-top-none">貸す人</>
     </div>
     <br><br><br>
