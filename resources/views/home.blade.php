@@ -103,7 +103,7 @@
     <div class="owl-carousel" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;margin&quot;: 30, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;576&quot;:{&quot;items&quot;:2},&quot;768&quot;:{&quot;items&quot;:3},&quot;991&quot;:{&quot;items&quot;:4},&quot;1200&quot;:{&quot;items&quot;:4}} }">
         <div class="grid-item" style="height: 320px;">
             <div class="product-card" style="height: 320px;">
-                <a class="product-thumb" style="height: 150px;" href="/products/19"><img src="/img/product/19/thum.jpeg" style="width: 100%; height: 100%;"></a>
+                <a class="product-thumb" style="height: 150px;" href="/products/19"><img src="/img/product/19/thum.jpg" style="width: 100%; height: 100%;"></a>
                 <h3 class="product-title" style="padding-top: 10px;"><a href="/products/19">Gear VR</a></h3>
                 <h4 class="product-price">¥ 200/日</h4>
                 <div class="product-buttons" style="padding-top: 1px;">
@@ -116,7 +116,7 @@
         </div>
         <div class="grid-item" style="height: 320px;">
             <div class="product-card" style="height: 320px;">
-                <a class="product-thumb" style="height: 150px;" href="/products/8"><img src="/img/product/8/thum.jpeg" style="width: 100%; height: 100%;"></a>
+                <a class="product-thumb" style="height: 150px;" href="/products/8"><img src="/img/product/8/thum.jpg" style="width: 100%; height: 100%;"></a>
                 <h3 class="product-title" style="padding-top: 10px;"><a href="/products/8">ハンドミキサー</a></h3>
                 <h4 class="product-price">¥ 100/日</h4>
                 <div class="product-buttons" style="padding-top: 1px;">
@@ -129,7 +129,7 @@
         </div>
         <div class="grid-item" style="height: 320px;">
             <div class="product-card" style="height: 320px;">
-                <a class="product-thumb" style="height: 150px;" href="/products/5"><img src="/img/product/5/thum.jpeg" style="width: 100%; height: 100%;"></a>
+                <a class="product-thumb" style="height: 150px;" href="/products/5"><img src="/img/product/5/thum.jpg" style="width: 100%; height: 100%;"></a>
                 <h3 class="product-title" style="padding-top: 10px;"><a href="/products/5">プロジェクター</a></h3>
                 <h4 class="product-price">¥ 100/日</h4>
                 <div class="product-buttons" style="padding-top: 1px;">
@@ -142,7 +142,7 @@
         </div>
         <div class="grid-item" style="height: 320px;">
             <div class="product-card" style="height: 320px;">
-                <a class="product-thumb" style="height: 150px;" href="/products/22"><img src="/img/product/22/thum.jpeg" style="width: 100%; height: 100%;"></a>
+                <a class="product-thumb" style="height: 150px;" href="/products/22"><img src="/img/product/22/thum.jpg" style="width: 100%; height: 100%;"></a>
                 <h3 class="product-title" style="padding-top: 10px;"><a href="/products/22">ニンテンドー64</a></h3>
                 <h4 class="product-price">¥ 100/日</h4>
                 <div class="product-buttons" style="padding-top: 1px;">
