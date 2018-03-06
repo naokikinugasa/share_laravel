@@ -27,7 +27,7 @@
                 @if(isset($product->price_week))
                 <span class="h2 d-block">¥ {{$product->price_week}}/週</span>
                 @endif
-                @if(isset($product->price_week))
+                @if(isset($product->price_month))
                 <span class="h2 d-block">¥ {{$product->price_month}}/月</span>
                 @endif
                 <p>場所：<a href="http://www.u-space.com/shop-search/detail.php?shop_id=20207">{{$product->place}}</a></p>
