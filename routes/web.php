@@ -40,3 +40,7 @@ Route::post('/reservation/reserve/{id}', 'ReservationsController@store')->middle
 Route::get('login/{provider}',          'Auth\SocialAccountController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\SocialAccountController@handleProviderCallback');
 
+Route::get('/contact', 'ContactController@form');
+Route::post('/contact/confirm', 'ContactController@confirm');
+Route::post('/contact/process', 'ContactController@process');
+

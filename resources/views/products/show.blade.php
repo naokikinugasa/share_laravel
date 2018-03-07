@@ -49,7 +49,6 @@
                 </button>
                 <span class="text-medium">出品者は{{$product->getOwnerName()}}さん</span>
 
-                <div class="_16tcko6">
                 <p style="text-align: center; margin-top: 16px; margin-bottom: 8px;">予約可能日</p>
                 <table class="cal">
                     <thead>
@@ -79,7 +78,9 @@
                     </tfoot>
                 </table>
 
-                {{--<hr class="mb-3">--}}
+                <hr class="mb-3">
+                <p style="text-align: center; margin-top: 16px; margin-bottom: 8px;">予約</p>
+                <div class="_16tcko6">
                 <p style="margin-top: 16px; margin-bottom: 4px;">日付</p>
                 <form class="checkValidation" action='/reservation/{{$product->id}}' method="GET">
                     <input type="text" class="datepicker" name="start_date" placeholder="2018/2/5">～

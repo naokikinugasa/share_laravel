@@ -13,43 +13,47 @@
 </section>
 <!-- Top Categories-->
 <section class="container padding-top-3x">
-    <h3 class="text-center mb-30">Share(シェア)は近所の人とモノをレンタルしあうサービスです</h3>
+    <h3 class="text-center mb-30"><strong style="color: red">Share</strong>は近所の人とモノを<strong style="color: red">貸し借り</strong>するサービスです</h3>
     <div class="text-center"><a class="btn btn-primary margin-top-none" href="/howto">使い方を見る</a></div>
     <br><br><br>
-    <div class="row">
-        <div class="col-md-4 col-sm-6">
-            <div class="text-center">
-                <h4 class="card-title">1.使ってみたいけど高くて買えない</h4>
-                <div class="inner" style="height: 210px;">
-                    <img src="img/PSVR.jpg" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">
-                </div>
-                <div class="card-body text-center" style="height: 210px; padding: 70px 90px;">
-                    <img src="img/yazirusi.png" style="width: 100%;">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="text-center">
-                <h4 class="card-title">2.数回しか使わないので元が取れない</h4>
-                <div class="inner" style="height: 210px;">
-                    <img src="img/kawanakya.jpg" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">
-                </div>
-                <div class="card-body text-center" style="height: 210px; padding: 70px 90px;">
-                    <img src="img/yazirusi.png" style="width: 100%;">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="text-center">
-                <h4 class="card-title">3.部屋が狭いので置く場所がない</h4>
-                <div class="inner" style="height: 210px;">
-                    <img src="img/heya.jpg" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">
-                </div>
-                <div class="card-body text-center" style="height: 210px; padding: 70px 90px;">
-                    <img src="img/yazirusi.png" style="width: 100%;">
-                </div>
-            </div>
-        </div>
+    <div style="width: 70%; margin: auto;">
+    <img src="img/Shareモデル4.png" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">
+    </div>
+    {{--<br><br><br><br><br><br><br><br>--}}
+    {{--<div class="row">--}}
+        {{--<div class="col-md-4 col-sm-6">--}}
+            {{--<div class="text-center">--}}
+                {{--<h4 class="card-title">1.使ってみたいけど高くて買えない</h4>--}}
+                {{--<div class="inner" style="height: 210px;">--}}
+                    {{--<img src="img/PSVR.jpg" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">--}}
+                {{--</div>--}}
+                {{--<div class="card-body text-center" style="height: 210px; padding: 70px 90px;">--}}
+                    {{--<img src="img/yazirusi.png" style="width: 100%;">--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-4 col-sm-6">--}}
+            {{--<div class="text-center">--}}
+                {{--<h4 class="card-title">2.数回しか使わないので元が取れない</h4>--}}
+                {{--<div class="inner" style="height: 210px;">--}}
+                    {{--<img src="img/kawanakya.jpg" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">--}}
+                {{--</div>--}}
+                {{--<div class="card-body text-center" style="height: 210px; padding: 70px 90px;">--}}
+                    {{--<img src="img/yazirusi.png" style="width: 100%;">--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-4 col-sm-6">--}}
+            {{--<div class="text-center">--}}
+                {{--<h4 class="card-title">3.部屋が狭いので置く場所がない</h4>--}}
+                {{--<div class="inner" style="height: 210px;">--}}
+                    {{--<img src="img/heya.jpg" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">--}}
+                {{--</div>--}}
+                {{--<div class="card-body text-center" style="height: 210px; padding: 70px 90px;">--}}
+                    {{--<img src="img/yazirusi.png" style="width: 100%;">--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
         {{--<div class="col-md-4 col-sm-6">--}}
         {{--<div class="card mb-30"><a class="card-img-tiles" href="shop-grid-ls.html">--}}
         {{--<div class="inner">--}}
@@ -62,37 +66,37 @@
         {{--</div>--}}
         {{--</div>--}}
         {{--</div>--}}
-    </div>
-    <div class="row">
-        <div class="col-md-4 col-sm-6" style="height: 400px; width: 100%; padding: 0px 30px;">
-            <div class="inner" style="height: 50%;">
-                <img src="img/projector3.jpg" alt="Category" style="height: 100%; width: 100%;">
-            </div>
-            <div class="card-body text-center">
-                <h4 class="card-title">高くて買えなかったものをレンタルして使おう。</h4>
-                <a class="btn btn-primary" href="{{url('/products')}}">商品を見る</a>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6" style="height: 400px;">
-            <div class="inner" style="height: 50%;">
-                <img src="img/placeit.jpg" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">
-            </div>
-            <div class="card-body text-center">
-                <h4 class="card-title">使ってないものをシェアしてお小遣いを稼ごう。</h4>
-                <a class="btn btn-primary" href="{{url('/products/create')}}">出品する</a>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6" style="height: 400px;">
-            <div class="inner" style="height: 50%;">
-                <img src="img/heya2.jpg" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">
-            </div>
-            <div class="card-body text-center">
-                <h4 class="card-title">必要最低限のモノで快適に過ごそう。</h4>
-                <a class="btn btn-primary" href="{{url('/howto')}}">使い方を見る
-                </a>
-            </div>
-        </div>
-    </div>
+    {{--</div>--}}
+    {{--<div class="row">--}}
+        {{--<div class="col-md-4 col-sm-6" style="height: 400px; width: 100%; padding: 0px 30px;">--}}
+            {{--<div class="inner" style="height: 50%;">--}}
+                {{--<img src="img/projector3.jpg" alt="Category" style="height: 100%; width: 100%;">--}}
+            {{--</div>--}}
+            {{--<div class="card-body text-center">--}}
+                {{--<h4 class="card-title">高くて買えなかったものをレンタルして使おう。</h4>--}}
+                {{--<a class="btn btn-primary" href="{{url('/products')}}">商品を見る</a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-4 col-sm-6" style="height: 400px;">--}}
+            {{--<div class="inner" style="height: 50%;">--}}
+                {{--<img src="img/placeit.jpg" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">--}}
+            {{--</div>--}}
+            {{--<div class="card-body text-center">--}}
+                {{--<h4 class="card-title">使ってないものをシェアしてお小遣いを稼ごう。</h4>--}}
+                {{--<a class="btn btn-primary" href="{{url('/products/create')}}">出品する</a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-4 col-sm-6" style="height: 400px;">--}}
+            {{--<div class="inner" style="height: 50%;">--}}
+                {{--<img src="img/heya2.jpg" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">--}}
+            {{--</div>--}}
+            {{--<div class="card-body text-center">--}}
+                {{--<h4 class="card-title">必要最低限のモノで快適に過ごそう。</h4>--}}
+                {{--<a class="btn btn-primary" href="{{url('/howto')}}">使い方を見る--}}
+                {{--</a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     {{--<div class="text-center"><a class="btn btn-outline-secondary margin-top-none" href="shop-categories.html">All Categories</a></div>--}}
 </section>
 <!-- Promo #1-->
@@ -176,7 +180,7 @@
         {{--</div>--}}
         <div class="col-md-4 col-sm-6 text-center mb-30"><img class="d-block w-90 img-thumbnail rounded-circle mx-auto mb-3" src="img/services/02.png" alt="Money Back">
             <h6>近所の人と気軽に貸し借り</h6>
-            <p class="text-muted margin-bottom-none">人似合う必要がないので気軽に貸し借りできます</p>
+            <p class="text-muted margin-bottom-none">人に会う必要がないので気軽に貸し借りできます</p>
         </div>
         <div class="col-md-4 col-sm-6 text-center mb-30"><img class="d-block w-90 img-thumbnail rounded-circle mx-auto mb-3" src="img/services/03.png" alt="Support">
             <h6>カスタマーサポート</h6>
