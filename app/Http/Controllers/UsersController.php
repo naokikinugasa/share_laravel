@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Reservation;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -35,5 +36,14 @@ class UsersController extends Controller
     {
         $user = Auth::user();
         return view("users.listing", ['user' => $user]);
+    }
+
+    public function money()
+    {
+        $user = Auth::user();
+        foreach ($user->products as $product) {
+            var_dump(Reservation::where('product_id', $product->id)->get());
+        }
+        return view("users.money", ['user' => $user]);
     }
 }

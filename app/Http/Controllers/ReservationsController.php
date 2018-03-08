@@ -47,6 +47,7 @@ class ReservationsController extends Controller
         $reservation->save();
 
         $user->money += $request->price;
+        $user->save();
 
         $title = '【予約確定】Shareの予約が確定しました。';
         $text = '予約が確定しました!

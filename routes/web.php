@@ -29,6 +29,7 @@ Auth::routes();
 Route::get('/users/', 'UsersController@index')->middleware('auth');
 Route::get('/users/renting', 'UsersController@renting')->middleware('auth');
 Route::get('/users/listing', 'UsersController@listing')->middleware('auth');
+Route::get('/users/money', 'UsersController@money')->middleware('auth');
 Route::get('/users/{id}', 'UsersController@show');
 
 Route::get('/home', 'TopController@index')->name('home');
@@ -47,4 +48,5 @@ Route::post('/contact/process', 'ContactController@process');
 Route::get('/transfer', 'TransferController@form');
 Route::post('/transfer/confirm', 'TransferController@confirm');
 Route::post('/transfer/process', 'TransferController@process');
+
 
