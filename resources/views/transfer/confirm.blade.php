@@ -1,6 +1,6 @@
 @extends('layouts.defalut')
 
-@section('title', 'お問い合わせ')
+@section('title', '送金申請')
 
 @section('content')
     <div class="panel panel-default" style="width: 50%; margin: auto;">
@@ -8,22 +8,18 @@
             <h1 class="panel-title">内容確認</h1>
         </div>
         <div class="panel-body">
-            <form action="{{action('ContactController@process')}}" method="post">
+            <form action="{{action('TransferController@process')}}" method="post">
 
-            <div class="form-group">
-                <label class="control-label" for="name">お名前</label>
-                <p class="form-control-static">{{$contact->name}}</p>
-            </div>
             <div class="form-group">
                 <label class="control-label" for="email">メールアドレス</label>
-                <p class="form-control-static">{{$contact->email}}</p>
+                <p class="form-control-static">{{$transfer->email}}</p>
             </div>
             <div class="form-group">
-                <label class="control-label" for="content">内容</label>
-                <p class="form-control-static">{{$contact->content}}</p>
+                <label class="control-label" for="money">金額</label>
+                <p class="form-control-static">¥{{$transfer->money}}</p>
             </div>
 
-            @foreach($contact->getAttributes() as $key => $value)
+            @foreach($transfer->getAttributes() as $key => $value)
                 <input type="hidden" name="{{$key}}" value="{{$value}}">
             @endforeach
 

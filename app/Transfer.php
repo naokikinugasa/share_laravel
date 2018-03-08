@@ -4,11 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Contact extends Model
+class Transfer extends Model
 {
     protected $fillable = [
-        'name',
+        'money',
         'email',
-        'content',
     ];
 }

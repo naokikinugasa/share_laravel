@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class ContactSent extends Mailable
+class TransferSent extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -16,11 +16,10 @@ class ContactSent extends Mailable
      *
      * @return void
      */
-    public function __construct($name, $content, $email)
+    public function __construct($email, $money)
     {
-        $this->name = $name;
-        $this->content = $content;
         $this->email = $email;
+        $this->money = $money;
     }
 
     /**
@@ -30,11 +29,10 @@ class ContactSent extends Mailable
      */
     public function build()
     {
-        return $this->text('emails.contact_template')
-            ->subject($this->name)
+        return $this->text('emails.transfer_template')
+            ->subject($this->email)
             ->with([
-                'content' => $this->content,
-                'email' => $this->email,
+                'money' => $this->money
             ]);
     }
 }

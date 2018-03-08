@@ -44,3 +44,7 @@ Route::get('/contact', 'ContactController@form');
 Route::post('/contact/confirm', 'ContactController@confirm');
 Route::post('/contact/process', 'ContactController@process');
 
+Route::get('/transfer', 'TransferController@form');
+Route::post('/transfer/confirm', 'TransferController@confirm');
+Route::post('/transfer/process', 'TransferController@process');
+
