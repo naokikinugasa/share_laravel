@@ -589,6 +589,7 @@
                             </div>
                         </li>
                         <li><a href="/users/">マイページ</a></li>
+                        <li><a href="/users/money">売上金</a></li>
                         <li><a href="/users/renting">レンタル中の商品</a></li>
                         <li><a href="/users/listing">出品中の商品</a></li>
                         {{--<li><a href="account-wishlist.html">いいね！一覧</a></li>--}}
