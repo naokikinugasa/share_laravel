@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Contact;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactSent;
 
 class ContactController extends Controller
 {
@@ -31,9 +33,11 @@ class ContactController extends Controller
     {
         $user = Auth::user();
         // お問い合わせフォームへの入力内容を保持したモデルオブジェクトを用意
-        $contact = Contact::make($request->all());
+        $title = $request->title;
+        $text = $request->text;
+        $email = $request->email;
 
-        Mail::to('sharetsukuba@gmail.com')->send(new ContactSent($contact));
+        Mail::to('sharetsukuba@gmail.com')->send(new ContactSent($title, $text, $email));
 
         return view('contact.complete', compact('user'));
     }

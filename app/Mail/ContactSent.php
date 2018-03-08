@@ -16,9 +16,11 @@ class ContactSent extends Mailable
      *
      * @return void
      */
-    public function __construct(Contact $contact)
+    public function __construct($title, $text, $email)
     {
-        $this->contact = $contact;
+        $this->title = $title;
+        $this->text = $text;
+        $this->email = $email;
     }
 
     /**
@@ -28,6 +30,11 @@ class ContactSent extends Mailable
      */
     public function build()
     {
-        return $this->view('contact.html');
+        return $this->text('emails.contact_template')
+            ->subject($this->title)
+            ->with([
+                'text' => $this->text,
+                'email' => $this->email,
+            ]);
     }
 }
