@@ -42,8 +42,8 @@ class UsersController extends Controller
     {
         $user = Auth::user();
         foreach ($user->products as $product) {
-            var_dump(Reservation::where('product_id', $product->id)->get());
+            $reservations = Reservation::where('product_id', $product->id)->get();
         }
-        return view("users.money", ['user' => $user]);
+        return view("users.money", compact('user', 'reservations'));
     }
 }
