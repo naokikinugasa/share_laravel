@@ -34,8 +34,9 @@ class ContactController extends Controller
         $user = Auth::user();
         // お問い合わせフォームへの入力内容を保持したモデルオブジェクトを用意
         $title = $request->title;
-        $text = $request->text;
+        $text = $request->message;
         $email = $request->email;
+
 
         Mail::to('sharetsukuba@gmail.com')->send(new ContactSent($title, $text, $email));
 
