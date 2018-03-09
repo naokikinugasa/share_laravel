@@ -16,7 +16,7 @@
     <h3 class="text-center mb-30"><strong style="color: red">Share</strong>は近所の人とモノを<strong style="color: red">貸し借り</strong>するサービスです</h3>
     <div class="text-center"><a class="btn btn-primary margin-top-none" href="/howto">使い方を見る</a></div>
     <br><br><br>
-    <div style="width: 70%; margin: auto;">
+    <div class="homeimg">
     <img src="img/Shareモデル4.png" alt="Category" style="height: 100%; width: 100%; padding: 0px 30px;">
     </div>
     {{--<br><br><br><br><br><br><br><br>--}}

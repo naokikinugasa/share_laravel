@@ -13,7 +13,7 @@
                 <div class="panel-heading">会員登録</div>
 
                 <div class="panel-body">
-                    <div style="margin: auto; width: 45%;">
+                    <div class="sns">
                         <h4 style="text-align: center;">SNSで登録</h4>
                         <a href="/login/twitter"  class="btn btn-block btn-social btn-twitter">
                             <span class="fa fa-twitter"></span>Log in with twitter</a>

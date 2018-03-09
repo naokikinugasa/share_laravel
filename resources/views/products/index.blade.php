@@ -81,21 +81,22 @@
         <div class="shop-toolbar padding-bottom-1x mb-2">
             <div class="column">
                 <div class="shop-sorting">
-                    <label for="sorting">Sort by:</label>
-                    <select class="form-control" id="sorting">
-                        <option>Popularity</option>
-                        <option>Low - High Price</option>
-                        <option>High - Low Price</option>
-                        <option>Avarage Rating</option>
-                        <option>A - Z Order</option>
-                        <option>Z - A Order</option>
-                    </select><span class="text-muted">Showing:&nbsp;</span><span>1 - 16 items</span>
+                    {{--<label for="sorting">Sort by:</label>--}}
+                    {{--<select class="form-control" id="sorting">--}}
+                        {{--<option>Popularity</option>--}}
+                        {{--<option>Low - High Price</option>--}}
+                        {{--<option>High - Low Price</option>--}}
+                        {{--<option>Avarage Rating</option>--}}
+                        {{--<option>A - Z Order</option>--}}
+                        {{--<option>Z - A Order</option>--}}
+                    {{--</select>--}}
+                    <span class="text-muted">Showing:&nbsp;</span><span>16 items</span>
                 </div>
             </div>
             <div class="column">
                 <div class="shop-view"><a class="grid-view active" href="shop-grid-ns.html"><span></span><span></span><span></span></a>
                     {{--<a class="list-view" href="shop-list-ns.html">--}}
-                    <span></span><span></span><span></span></a></div>
+                    <span></span><span></span><span></span></div>
             </div>
         </div>
         <!-- Products Grid-->
@@ -104,9 +105,9 @@
             <div class="grid-sizer"></div>
             <!-- Product-->
             @foreach ($products as $product)
-            <div class="grid-item" style="height: 320px;">
-                <div class="product-card" style="height: 320px;">
-                    <a class="product-thumb" style="height: 150px;" href="/products/{{ $product->id }}"><img src="{{$product->pic_thum()}}" style="width: 100%; height: 100%;"></a>
+            <div class="grid-item">
+                <div class="product-card">
+                    <a class="product-thumb" href="/products/{{ $product->id }}"><img src="{{$product->pic_thum()}}" style="width: 100%; height: 100%;"></a>
                     <h3 class="product-title" style="padding-top: 10px;"><a href="/products/{{ $product->id }}">{{$product->title}}</a></h3>
                     <h4 class="product-price">¥ {{$product->price_day}}/日</h4>
                     <div class="product-buttons" style="padding-top: 1px;">

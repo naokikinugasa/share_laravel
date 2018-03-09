@@ -41,10 +41,46 @@
     margin: 0;
 }
 
-
 .header-signup {
-    display: inline-block;
-    border: 1px solid #0099e8;
-    background: #fff;
-    color: #0099e8;
+    display: none;
 }
+.product-thumb {
+    height: 172px;
+}
+.grid-item {
+    height: 340px;
+}
+.product-card {
+    height: 340px;
+}
+.product-carousel {
+    height: 175px;
+}
+
+@media screen and (min-width:600px){
+    .header-signup {
+        display: inline-block;
+        border: 1px solid #0099e8;
+        background: #fff;
+        color: #0099e8;
+    }
+
+    .homeimg {
+        width: 70%;
+        margin: auto;
+    }
+    .product-thumb {
+        height: 150px;
+    }
+    .grid-item {
+        height: 360px;
+    }
+    .product-card {
+        height: 360px;
+    }
+    .product-carousel {
+        height: 354px;
+    }
+
+}
+
