@@ -44,10 +44,10 @@
 .header-signup {
     display: none;
 }
-.product-thumb {
+.product-card .product-thumb {
     height: 172px;
 }
-.grid-item {
+.isotope-grid .grid-item {
     height: 340px;
 }
 .product-card {
@@ -69,10 +69,10 @@
         width: 70%;
         margin: auto;
     }
-    .product-thumb {
+    .product-card .product-thumb {
         height: 150px;
     }
-    .grid-item {
+    .isotope-grid .grid-item {
         height: 360px;
     }
     .product-card {
