@@ -32,24 +32,24 @@ class Helper
     }
 
     public static function countMinPrice($day, $week, $month, $days) {
-        if ($days >= 1) {
-            if (isset($week) && $days >= 7) {
-                if (isset($month) && $days >= 30) {
-                    $price1 = (floor($days/30) * $month);
-                    if ($days % 30 >= 7) {
-                        $price2 = (floor(($days % 30)/7) * $week) + (($days % 30) % 7 * $day);
-                    } else {
-                        $price2 = ($days % 30 * $day);
-                    }
-                    $price = $price1 + $price2;
+        if ($days == 1) {
+            return $day;
+        }
+
+        if (isset($week) && $days >= 7) {
+            if (isset($month) && $days >= 30) {
+                $price1 = (floor($days/30) * $month);
+                if ($days % 30 >= 7) {
+                    $price2 = (floor(($days % 30)/7) * $week) + ((($days-1) % 30) % 7 * $day);
                 } else {
-                    $price = (floor($days/7) * $week) + ($days % 7 * $day);
+                    $price2 = (($days-1) % 30 * $day);
                 }
+                $price = $price1 + $price2;
             } else {
-                $price = $days * $day;
+                $price = (floor($days/7) * $week) + (($days-1) % 7 * $day);
             }
         } else {
-            $price = $day;
+            $price = ($days-1) * $day;
         }
 
         return $price;

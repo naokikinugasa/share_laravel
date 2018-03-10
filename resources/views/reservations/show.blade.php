@@ -71,10 +71,10 @@
                                             <tr>
                                                 <td></td>
                                                 <td class="text-lg text-medium">
-                                                    ¥{{$helper->countMinPrice($product->price_day, $product->price_week, $product->price_month, count($reservedDays)-1)}}
+                                                    ¥{{$helper->countMinPrice($product->price_day, $product->price_week, $product->price_month, count($reservedDays))}}
                                                     {{--¥{{min( (count($reservedDays) - 1)*$product->price_day, $product->price_week, $product->price_month )}}--}}
                                                 </td>
-                                                <input type="hidden" name="price" value="{{$helper->countMinPrice($product->price_day, $product->price_week, $product->price_month, count($reservedDays)-1)}}">
+                                                <input type="hidden" name="price" value="{{$helper->countMinPrice($product->price_day, $product->price_week, $product->price_month, count($reservedDays))}}">
                                             </tr>
                                         </table>
                                         @if(count($reservedDays) > 1)
