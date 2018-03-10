@@ -37,13 +37,13 @@ class Helper
                 if (isset($month) && $days >= 30) {
                     $price1 = (floor($days/30) * $month);
                     if ($days % 30 >= 7) {
-                        $price2 = (floor(($days % 30)/7) * $week) + (($days % 30) % 7 * $days);
+                        $price2 = (floor(($days % 30)/7) * $week) + (($days % 30) % 7 * $day);
                     } else {
-                        $price2 = ($days % 30 * $days);
+                        $price2 = ($days % 30 * $day);
                     }
                     $price = $price1 + $price2;
                 } else {
-                    $price = (floor($days/7) * $week) + ($days % 7 * $days);
+                    $price = (floor($days/7) * $week) + ($days % 7 * $day);
                 }
             } else {
                 $price = $days * $day;
