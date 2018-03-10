@@ -3,7 +3,6 @@
 @section('title', '出品画面')
 
 @section('content')
-
         <!-- Page Content-->
         <div class="container padding-bottom-3x mb-1">
             <div class="row">

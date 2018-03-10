@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\RentSent;
-use Intervention\Image\Facades\Image;
+//use Intervention\Image\Facades\Image;
 
 class ProductsController extends Controller
 {
@@ -62,16 +62,16 @@ class ProductsController extends Controller
     {
         $user = Auth::user(); //TODO:これ全部にいる？
 
-        $image = Image::make($req->file('thum')->getRealPath());
-        $image->resize(523, null, function ($constraint) {
-            $constraint->aspectRatio();
-        });
+//        $image = Image::make($req->file('thum')->getRealPath());
+//        $image->resize(523, null, function ($constraint) {
+//            $constraint->aspectRatio();
+//        });
+//        $image->save(public_path() . "/img/product/tmp/" . $thum_name);
 
         $thum_name = uniqid("THUM_") . "." . $req->file('thum')->guessExtension(); // TMPファイル名
-//        $req->file('thum')->move(public_path() . "/img/product/tmp", $thum_name);
+        $req->file('thum')->move(public_path() . "/img/product/tmp", $thum_name);
         $thum = "/img/product/tmp/".$thum_name;
 
-        $image->save(public_path() . "/img/product/tmp/" . $thum_name);
 
 
 
