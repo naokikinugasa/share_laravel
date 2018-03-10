@@ -387,7 +387,7 @@
                     {{--</li>--}}
                 {{--</ul>--}}
             {{--</li>--}}
-            <li class="has-children"><span><a href="products"><span>商品一覧</span></a><span class="sub-menu-toggle"></span></span>
+            <li class="has-children"><span><a href="/products"><span>商品一覧</span></a><span class="sub-menu-toggle"></span></span>
                 <ul class="offcanvas-submenu">
                     <li><a href="/products">全て</a></li>
                     <li><a href="/products/category/1">家電</a></li>
@@ -441,8 +441,8 @@
     </form>
     <div class="site-branding">
         <div class="inner">
-            <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
-            <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+            {{--<!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>--}}
+            {{--<!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>--}}
             <!-- Site Logo--><a class="site-logo" href="/home"><img src="/img/share.png"></a>
         </div>
     </div>

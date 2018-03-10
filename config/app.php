@@ -169,6 +169,7 @@ return [
          */
 
         Laravel\Socialite\SocialiteServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -178,6 +179,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
 
     ],
 
@@ -230,6 +232,7 @@ return [
 
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Helper' => App\Helper::class,
+        'Image' => Intervention\Image\Facades\Image::class,
     ],
 
 ];
