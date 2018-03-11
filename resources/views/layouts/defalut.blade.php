@@ -305,7 +305,7 @@
 
     <nav class="offcanvas-menu">
         <ul class="menu">
-            <li class="has-children"><span><a href="/home"><span>Home</span></a></span>
+            <li class="has-children"><span><a href="/"><span>Home</span></a></span>
             </li>
             <li class="has-children active"><span><a href="/howto"><span>使い方</span></a></span>
                 {{--<ul class="offcanvas-submenu">--}}
@@ -443,13 +443,13 @@
         <div class="inner">
             {{--<!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>--}}
             {{--<!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>--}}
-            <!-- Site Logo--><a class="site-logo" href="/home"><img src="/img/share.png"></a>
+            <!-- Site Logo--><a class="site-logo" href="/"><img src="/img/share.png"></a>
         </div>
     </div>
     <!-- Main Navigation-->
     <nav class="site-menu">
         <ul>
-            <li class="has-megamenu"><a href="/home"><span>Home</span></a>
+            <li class="has-megamenu"><a href="/"><span>Home</span></a>
             </li>
             <li><a href="/howto"><span>使い方</span></a>
             </li>
@@ -577,7 +577,7 @@
 </header>
 <!-- Off-Canvas Wrapper-->
 <div class="offcanvas-wrapper">
-    @if(basename(request()->path()) !== 'home')
+    @if(basename(request()->path()) !== 'home' && basename(request()->path()) !== '')
     <!-- Page Title-->
     <div class="page-title">
         <div class="container">
@@ -627,7 +627,7 @@
                 <section class="widget widget-links widget-light-skin">
                     <h3 class="widget-title">About Us</h3>
                     <ul>
-                        <li><a href="/home">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/howto">使い方</a></li>
                         <li><a href="/aboutshare">Shareについて</a></li>
                         <li><a href="#">お問い合わせ</a></li>

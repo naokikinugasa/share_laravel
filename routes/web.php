@@ -10,9 +10,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+Route::get('/', 'TopController@index')->name('home');
 
 Route::get('hello', 'HelloController@index');
 Route::get('/products/', 'ProductsController@index');

@@ -29,7 +29,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/home') }}">
+                    <a class="navbar-brand" href="{{ url('/') }}">
                         <img src="/img/share.png" style="width: 35%; height: 100%;">
                         {{--{{ config('app.name', 'Laravel') }}--}}
                     </a>

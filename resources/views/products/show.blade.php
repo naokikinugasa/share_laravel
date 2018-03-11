@@ -37,7 +37,7 @@
 
                 <button class="btn btn-owner" style="margin-right: 0px; padding: 0px 0px;">
                     <div class="owner-ava">
-                        <a href="/home">
+                        <a href="/">
                             {{--TODO:userページにリンク--}}
                         <img src="{{$product->getOwnerAvatar()}}" style="display: block;
     width: 44px;
