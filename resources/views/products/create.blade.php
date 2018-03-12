@@ -78,7 +78,7 @@
                                 {{--<input class="custom-file-input" id="file-input" type="file" name="thum" style="display: none" />--}}
                             </div>
                         </div>
-
+                        <p style="color: red">※画像は横長でお願いします。</p>
                         @if($errors->has('thum'))
                             <p style="color: red;">EROOR {{$errors->first('thum')}}</p>
                         @endif

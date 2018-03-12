@@ -21,7 +21,7 @@
             <!-- Product Info-->
             <div class="col-md-6">
                 <form method="post" action="{{ url("/products") }}">
-
+                    <p style="color: red;">まだ出品は完了していません</p>
                 <div class="padding-top-2x mt-2 hidden-md-up"></div>
                 <div class="rating-stars"><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star"></i>
                 </div><span class="text-muted align-middle">&nbsp;&nbsp;4.2 | 3 customer reviews</span>
@@ -46,10 +46,12 @@
                 <div class="padding-bottom-1x mb-2"><span class="text-medium">Categories:&nbsp;{{Helper::getCategoryName($data['category_id'])}}</span></div>
                 <input type="hidden" name="category_id" value="{{$data['category_id']}}">
                 <input type="hidden" name="thum" value="{{$thum}}">
+
                 <div class="d-flex flex-wrap justify-content-between align-items-center">
                     <div class="custom-control custom-checkbox d-block">
 
                     </div>
+
                     <input class="btn btn-primary margin-right-none" type="submit" name="write" value="出品する">
                 </div>
 
