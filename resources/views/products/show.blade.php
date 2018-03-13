@@ -46,7 +46,7 @@
     border: 1px solid #e1e7ec;
 border-radius: 50%;">
                             @else
-                                <img src="/img/user_default.jpeg" style="display: block;
+                                <img src="/img/user_default.png" style="display: block;
     width: 44px;
     padding: 3px;
     border: 1px solid #e1e7ec;
