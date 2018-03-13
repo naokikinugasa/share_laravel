@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Shop Grid Right Sidebar
+    <title>Share　つくば
     </title>
     <!-- SEO Meta Tags-->
-    <meta name="description" content="Unishop - Universal E-Commerce Template">
-    <meta name="keywords" content="shop, e-commerce, modern, flat style, responsive, online store, business, mobile, blog, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
-    <meta name="author" content="Rokaux">
+    <meta name="description" content="Shareは近所の人とモノを貸し借りするサービスです。現在つくば市限定で稼働しています。倉庫経由なので人直接会う必要がありません。">
+    <meta name="keywords" content="share, つくば">
+    <meta name="author" content="Share">
     <!-- Mobile Specific Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Favicon and Apple Icons-->
@@ -51,7 +51,15 @@
 
 
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67426158-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'UA-67426158-5');
+    </script>
 
 </head>
 <!-- Body-->
