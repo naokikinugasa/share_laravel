@@ -39,7 +39,7 @@
                     <div class="owner-ava">
                         <a href="/">
                             {{--TODO:userページにリンク--}}
-                            @if(isset($product->getOwnerAvatar()))
+                            @if($product->getOwnerAvatar() !== null)
                             <img src="{{$product->getOwnerAvatar()}}" style="display: block;
     width: 44px;
     padding: 3px;
