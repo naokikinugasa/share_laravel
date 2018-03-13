@@ -39,11 +39,19 @@
                     <div class="owner-ava">
                         <a href="/">
                             {{--TODO:userページにリンク--}}
-                        <img src="{{$product->getOwnerAvatar()}}" style="display: block;
-    width: 44px;
-    padding: 3px;
-    border: 1px solid #e1e7ec;
-    border-radius: 50%;">
+                            {{--@if(isset($product->getOwnerAvatar))--}}
+                            {{--<img src="{{$product->getOwnerAvatar()}}" style="display: block;--}}
+    {{--width: 44px;--}}
+    {{--padding: 3px;--}}
+    {{--border: 1px solid #e1e7ec;--}}
+{{--border-radius: 50%;">--}}
+                            {{--@else--}}
+                                {{--<img src="/img/user_default.jpeg" style="display: block;--}}
+    {{--width: 44px;--}}
+    {{--padding: 3px;--}}
+    {{--border: 1px solid #e1e7ec;--}}
+{{--border-radius: 50%;">--}}
+                            {{--@endif--}}
                         </a>
                     </div>
                 </button>
