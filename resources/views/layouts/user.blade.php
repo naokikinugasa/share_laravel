@@ -9,7 +9,13 @@
                     {{--<div class="info-label" data-toggle="tooltip" title="You currently have 290 Reward Points to spend"><i class="icon-medal"></i>290 points</div>--}}
                 {{--</div>--}}
                 <div class="user-info">
-                    <div class="user-avatar"><a class="edit-avatar" href="#"></a><img src="{{$user->avatar}}" alt="User"></div>
+                    <div class="user-avatar"><a class="edit-avatar" href="#"></a>
+                        @if(isset($user->avatar))
+                        <img src="{{$user->avatar}}" alt="User">
+                        @else
+                        <img src="/img/user_default.png" alt="User">
+                        @endif
+                    </div>
                     <div class="user-data">
                         <h4>{{$user->name}}</h4><span>{{$user->created_at}}</span>
                         {{--TODO:タイムスタンプ、時間削除--}}
