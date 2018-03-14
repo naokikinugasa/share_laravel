@@ -186,7 +186,12 @@
                     <li><a href="/users/money">売上金</a></li>
                     <li><a href="/users/renting">レンタル中の商品</a></li>
                     <li><a href="/users/listing">出品中の商品</a></li>
-                    <li><a href="/logout">ログアウト</a></li>
+                    <li><a href="/logout" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"> <i class="icon-unlock"></i>ログアウト</a>
+                        <form id="logout-form" action="/logout" method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="IZ7zDhh2X46BdoZlMvD0rOHN2BLeb39EKvpRa9XL">
+                        </form>
+                    </li>
                 </ul>
             </li>
 
@@ -414,7 +419,7 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="/howto">使い方</a></li>
                         <li><a href="/aboutshare">Shareについて</a></li>
-                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="/contact">お問い合わせ</a></li>
                     </ul>
                 </section>
             </div>
