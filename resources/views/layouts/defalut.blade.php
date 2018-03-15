@@ -61,6 +61,9 @@
         gtag('config', 'UA-67426158-5');
     </script>
 
+    <meta property="og:title" content="Share" />
+    <meta property="og:image" content="/img/ogt.png" />
+
 </head>
 <!-- Body-->
 <body>
