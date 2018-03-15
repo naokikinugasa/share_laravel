@@ -19,4 +19,10 @@ class TopController extends Controller
         $user = Auth::user();
         return view('howto', compact("user"));
     }
+
+    public function terms()
+    {
+        $user = Auth::user();
+        return view('terms', compact("user"));
+    }
 }

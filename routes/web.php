@@ -35,6 +35,7 @@ Route::get('/users/{id}', 'UsersController@show');
 
 Route::get('/home', 'TopController@index')->name('home');
 Route::get('/howto', 'TopController@howto');
+Route::get('/terms', 'TopController@terms');
 
 Route::get('/reservation/{id}', 'ReservationsController@show')->middleware('auth');
 Route::post('/reservation/reserve/{id}', 'ReservationsController@store')->middleware('auth');

@@ -18,7 +18,7 @@
                         <td>
                             <div class="product-item"><a class="product-thumb" href="/products/{{$product->id}}"><img src="{{$product->pic_thum()}}" alt="Product"></a>
                                 <div class="product-info">
-                                    <h4 class="product-title"><a href="shop-single.html">{{$product->title}}</a></h4>
+                                    <h4 class="product-title"><a href="/products/{{$product->id}}">{{$product->title}}</a></h4>
                                     <div class="text-lg text-medium text-muted">{{$product->price}}</div>
                                     {{--<div>Availability:--}}
                                         {{--<div class="d-inline text-success">In Stock</div>--}}
