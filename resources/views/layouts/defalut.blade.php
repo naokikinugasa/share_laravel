@@ -5,7 +5,7 @@
     <title>Share　つくば
     </title>
     <!-- SEO Meta Tags-->
-    <meta name="description" content="Shareは近所の人とモノを貸し借りするサービスです。現在つくば市限定で稼働しています。倉庫経由なので人直接会う必要がありません。">
+    <meta name="description" content="Shareは近所の人とモノを貸し借りするサービスです。現在つくば市限定で稼働しています。">
     <meta name="keywords" content="share, つくば">
     <meta name="author" content="Share">
     <!-- Mobile Specific Meta Tag-->
