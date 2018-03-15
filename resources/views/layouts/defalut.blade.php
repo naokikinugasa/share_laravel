@@ -62,7 +62,7 @@
     </script>
 
     <meta property="og:title" content="Share" />
-    <meta property="og:image" content="/img/ogt.png" />
+    <meta property="og:image" content="/img/ogt2.png" />
 
 </head>
 <!-- Body-->
