@@ -22,6 +22,7 @@ Route::post('/products/create/confirm', 'ProductsController@confirm')->middlewar
 Route::post('/products/', 'ProductsController@store')->middleware('auth');
 Route::delete('/products/{id}', 'ProductsController@destroy');
 Route::get('/products/{id}', 'ProductsController@show');
+Route::post('/products/{id}', 'ProductsController@show');
 Route::get('/products/category/{id}', 'ProductsController@category');
 
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Calendar;
 use App\Http\Requests\UploaderRequest;
+use App\Message;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -41,6 +42,16 @@ class ProductsController extends Controller
         foreach ($product->reservated_days as $reservation) {
             array_push($reservedDates, $reservation->date);
         }
+
+        if ($request->has('message')) {
+            $message = New Message();
+            $message->text = $request->input('message');
+            $message->user_id = $user->id;
+            $message->product_id = $id;
+            $message->save();
+        }
+
+
         return view('products.show', ['product' => $product, "calendar" => $calendar, 'user' => $user, 'reservedDates' => $reservedDates, 't' =>$t]);
     }
 

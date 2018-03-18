@@ -120,6 +120,68 @@ border-radius: 50%;">
                 </div>
                 </div>
             </div>
+
+            <div class="row mb-3" style="width: 100%;">
+                <div class="col-lg-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#comments" data-toggle="tab" role="tab" aria-selected="true">Q&amp;A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews" data-toggle="tab" role="tab" aria-selected="false">レビュー</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade message-scroll active in show" id="comments" role="tabpanel">
+                            <!-- Review-->
+                            @foreach ($product->messages as $message)
+                            <div class="comment right">
+                                <div class="comment-author-ava right">
+                                    <img src="{{$message->getUserAvatar()}}" alt="Review author">
+                                </div>
+                                <div class="comment-body right">
+                                    <p class="comment-text">{{$message->text}}</p>
+                                    <div class="comment-footer">
+                                        <span class="comment-meta">{{$message->getUserName()}}&nbsp;&nbsp;{{$message->created_at}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+
+
+                            <!-- Review Form-->
+                            <h5 class="mb-30 padding-top-1x">このアイテムに関する質問はこちら</h5>
+                            <form action="" id="comment-form" class="row" method="POST">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control form-control-rounded" name="message" id="id_text" rows="1" required=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-right">
+
+                                    {{--<a data-toggle="modal" data-target="#Loginmodal">--}}
+                                        <input class="btn btn-outline-primary" type="submit" value="質問する">
+                                    {{--</a>--}}
+
+                                </div>
+                            </form>
+
+
+
+                        </div>
+
+                        <div class="tab-pane fade" id="reviews" role="tabpanel">
+
+                            <!-- Review-->
+
+                            <p>まだレビューはありません</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     </div>

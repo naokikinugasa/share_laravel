@@ -31,6 +31,11 @@ class Product extends Model
         return $this->hasMany('App\Reservated_day');
     }
 
+    public function messages()
+    {
+        return $this->hasMany('App\Message');
+    }
+
     public function pic_thum()
     {
         $fnamebase = "/img/product/".$this->id."/thum.";
