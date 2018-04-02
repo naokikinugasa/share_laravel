@@ -449,7 +449,7 @@
         <p class="footer-copyright">© All rights reserved. Made with Share</p>
     </div>
 </footer>
-        @if( Request::path() !== "products/create" && Request::path() !== "products/create/confirm"))
+        @if( Request::path() !== "products/create" && Request::path() !== "products/create/confirm")
         <a class="footer-sell-btn" href="{{url('products/create')}}" style="color:#fff;text-decoration: none;">
             <div>出品</div>
             <i class="icon-camera"></i>
