@@ -63,6 +63,8 @@
 
     <meta property="og:title" content="Share" />
     <meta property="og:image" content="/img/ogt4.png" />
+    
+    <meta name="twitter:card" content="summary_large_image">
 
 </head>
 <!-- Body-->
