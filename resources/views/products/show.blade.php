@@ -199,4 +199,14 @@ border-radius: 50%;">
             border: 1px solid #e4e4e4;
         }
     </style>
+
+<script type=”text/javascript”>
+    window.onload=function(){
+        var css=document.createElement(“link”);
+        css.setAttribute(“rel”,”stylesheet”);
+        css.setAttribute(“type”,”text/css”);
+        css.setAttribute(“href”,”/css/cal.css”);
+        document.getElementsByTagName(“head”)[0].appendChild(css);
+    }
+</script>
 @endsection

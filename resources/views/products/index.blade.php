@@ -124,14 +124,4 @@
     </div>
 
 </div>
-
-<script type=”text/javascript”>
-window.onload=function(){
-    var css=document.createElement(“link”);
-    css.setAttribute(“rel”,”stylesheet”);
-    css.setAttribute(“type”,”text/css”);
-    css.setAttribute(“href”,”/css/cal.css”);
-    document.getElementsByTagName(“head”)[0].appendChild(css);
-}
-</script>
 @endsection
