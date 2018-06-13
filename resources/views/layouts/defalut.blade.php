@@ -23,16 +23,10 @@
     <!-- Main Template Styles-->
     <link id="mainStyles" rel="stylesheet" type="text/css" media="screen" href="/css/styles.min.css">
     <!-- Modernizr-->
-    <script src="/js/modernizr.min.js"></script>
-
-
-
-
-
-
-    <script src="/js/jquery-3.3.1.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+    <script defer src="/js/modernizr.min.js"></script>
+    <script defer src="/js/jquery-3.3.1.js"></script>
+    <script defer src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script defer src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" >
     <script>
         // $関数の割り当てを初期化
