@@ -198,15 +198,54 @@ border-radius: 50%;">
             width: 100%;
             border: 1px solid #e4e4e4;
         }
+
+        /*カレンダー*/
+        .cal {
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            width: 60%;
+            height: 200px;
+        }
+        .cal th {
+            background: white;
+        }
+        .cal th, td {
+            padding: 7px;
+            text-align: center;
+            background: white;
+        }
+        /*カレンダー(確定)*/
+        .calConfirm {
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            width: 60%;
+            height: 200px;
+            margin-bottom: 200px;
+        }
+        .calConfirm th {
+            background: white;
+        }
+        .calConfirm th, td {
+            padding: 7px;
+            text-align: center;
+            background: white;
+        }
+
+        .youbi_0 {
+            color: green;
+        }
+        .youbi_6 {
+            color: blue;
+        }
+        .today {
+            font-weight: bold;
+        }
+        .gray {
+            color: #dedede;
+        }
+        .red {
+            color: red;
+        }
     </style>
 
-<script type=”text/javascript”>
-    window.onload=function(){
-        var css=document.createElement(“link”);
-        css.setAttribute(“rel”,”stylesheet”);
-        css.setAttribute(“type”,”text/css”);
-        css.setAttribute(“href”,”/css/cal.css”);
-        document.getElementsByTagName(“head”)[0].appendChild(css);
-    }
-</script>
 @endsection
