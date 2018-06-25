@@ -9,6 +9,8 @@ ATS = config.ACCESS_TOKEN_SECRET
 twitter = OAuth1Session(CK, CS, AT, ATS)
 
 input = sys.stdin.readline()
+input = input.rstrip('\r\n')
+# input = 1011062761499947008
 
 def get_friends_id(twitter):
     url = "https://api.twitter.com/1.1/friends/ids.json?user_id=985819804484292608"
@@ -53,7 +55,7 @@ for i in range(0,1):
         # next_results = search_timeline["search_metadata"]['next_results']
         # url = base_url + next_results 
     else:
-        print("ERROR: %d" % req.status_code)
+        print("ERROR: %d" % req.status_code, end='')
 # print("len(links): " + str(len(links)))
 if tweet_id != []:
     newest_id = tweet_id[0]
