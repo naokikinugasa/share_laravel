@@ -40,7 +40,6 @@ for i in range(0,1):
 
         # if "next_results" not in search_timeline["search_metadata"]:
         #     break
-
         for tweet in search_timeline['statuses']:
             if tweet['user']['id'] in friends_list:
                 # print(tweet['created_at'])
@@ -60,4 +59,4 @@ if tweet_id != []:
     newest_id = tweet_id[0]
     print(newest_id)
 else:
-    print("eeee")
+    print(input)
