@@ -42,12 +42,12 @@ for i in range(0,1):
         #     break
 
         for tweet in search_timeline['statuses']:
-            # if tweet['user']['id'] in friends_list:
+            if tweet['user']['id'] in friends_list:
                 # print(tweet['created_at'])
                 link = "https://twitter.com/" + tweet['user']['screen_name'] + "/status/" + tweet['id_str']
-                # requests.post('https://hooks.slack.com/services/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', data = json.dumps({
-                #     'text': link
-                # }))
+                requests.post('https://hooks.slack.com/services/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', data = json.dumps({
+                    'text': link
+                }))
                 links.append(link)
                 tweet_id.append(tweet['id'])
 
