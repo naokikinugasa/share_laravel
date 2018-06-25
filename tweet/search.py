@@ -8,7 +8,7 @@ AT = config.ACCESS_TOKEN
 ATS = config.ACCESS_TOKEN_SECRET
 twitter = OAuth1Session(CK, CS, AT, ATS)
 
-args = sys.argv
+input = sys.stdin.readline()
 
 def get_friends_id(twitter):
     url = "https://api.twitter.com/1.1/friends/ids.json?user_id=985819804484292608"
@@ -32,7 +32,7 @@ tweet_id = []
 for i in range(0,1):
 
     if i == 0:
-        url = base_url + "?since_id=" + str(args[1])
+        url = base_url + "?since_id=" + str(input)
     req = twitter.get(url, params = params)
     if req.status_code == 200:
         search_timeline = json.loads(req.text)
@@ -42,12 +42,12 @@ for i in range(0,1):
         #     break
 
         for tweet in search_timeline['statuses']:
-            if tweet['user']['id'] in friends_list:
+            # if tweet['user']['id'] in friends_list:
                 # print(tweet['created_at'])
                 link = "https://twitter.com/" + tweet['user']['screen_name'] + "/status/" + tweet['id_str']
-                requests.post('https://hooks.slack.com/services/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', data = json.dumps({
-                    'text': link
-                }))
+                # requests.post('https://hooks.slack.com/services/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', data = json.dumps({
+                #     'text': link
+                # }))
                 links.append(link)
                 tweet_id.append(tweet['id'])
 
@@ -56,5 +56,8 @@ for i in range(0,1):
     else:
         print("ERROR: %d" % req.status_code)
 # print("len(links): " + str(len(links)))
-oldest_id = tweet_id[len(links) - 1]
-print(oldest_id)
+if tweet_id != []:
+    newest_id = tweet_id[0]
+    print(newest_id)
+else:
+    print("eeee")
