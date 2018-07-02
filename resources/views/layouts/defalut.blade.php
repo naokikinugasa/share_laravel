@@ -73,7 +73,7 @@
 
 
 <!-- Off-Canvas Mobile Menu-->
-<div class="offcanvas-container" id="mobile-menu"><a class="account-link" href="account-orders.html">
+<div class="offcanvas-container" id="mobile-menu"><a class="account-link" href="/users">
         @if(isset($user))
             @if(isset($user->avatar))
                 <img src="{{$user->avatar}}" alt="">
@@ -377,7 +377,6 @@
                     {{--<li><a href="index.html">Home</a>--}}
                     {{--</li>--}}
                     {{--<li class="separator">&nbsp;</li>--}}
-                    {{--<li><a href="account-orders.html">Account</a>--}}
                     {{--</li>--}}
                     {{--<li class="separator">&nbsp;</li>--}}
                     {{--<li>My Wishlist</li>--}}
