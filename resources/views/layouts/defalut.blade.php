@@ -377,6 +377,7 @@
                     {{--<li><a href="index.html">Home</a>--}}
                     {{--</li>--}}
                     {{--<li class="separator">&nbsp;</li>--}}
+                    {{--<li><a href="account-orders.html">Account</a>--}}
                     {{--</li>--}}
                     {{--<li class="separator">&nbsp;</li>--}}
                     {{--<li>My Wishlist</li>--}}

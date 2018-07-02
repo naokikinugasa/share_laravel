@@ -23,6 +23,7 @@
                 </div>
             </aside>
             <nav class="list-group">
+                {{--<a class="list-group-item " href="account-orders.html"><i class="icon-bag"></i>Orders</a>--}}
                 <a class="list-group-item" href="/users"><i class="icon-head"></i>Profile</a>
                 <a class="list-group-item " href="/users/money"><i class="icon-tag"></i>売上金</a>
                 <a class="list-group-item" href="/users/renting"><i class="icon-map"></i>レンタル中の商品</a>
