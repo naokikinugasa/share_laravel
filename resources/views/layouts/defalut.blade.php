@@ -19,9 +19,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
     <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
     <link rel="stylesheet" type="text/css" media="screen" href="/css/vendor.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/extend.css">
+    
     <!-- Main Template Styles-->
     <link id="mainStyles" rel="stylesheet" type="text/css" media="screen" href="/css/styles.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/extend.css">
     <!-- Modernizr-->
     <script src="/js/modernizr.min.js"></script>
     <script src="/js/jquery-3.3.1.js"></script>

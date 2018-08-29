@@ -44,19 +44,25 @@
 .header-signup {
     display: none;
 }
+.product-card {
+    /* width: 50%; */
+    height: 170px;
+}
 .product-card .product-thumb {
-    height: 172px;
+    height: 86px;
+}
+.isotope-grid {
+    display: inline-table;
 }
 .isotope-grid .grid-item {
-    height: 340px;
-}
-.product-card {
     height: 340px;
 }
 .product-carousel {
     height: 175px;
 }
-
+.product-card .product-title {
+    font-size: 14px;
+}
 @media screen and (min-width:600px){
     .header-signup {
         display: inline-block;
@@ -83,4 +89,3 @@
     }
 
 }
-

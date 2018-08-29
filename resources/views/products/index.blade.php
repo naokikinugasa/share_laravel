@@ -100,22 +100,22 @@
             </div>
         </div>
         <!-- Products Grid-->
-        <div class="isotope-grid cols-4 mb-2">
-            <div class="gutter-sizer"></div>
-            <div class="grid-sizer"></div>
+        <div class="isotope-grid cols-4 mb-2" id="target">
+            <!-- <div class="gutter-sizer"></div>
+            <div class="grid-sizer"></div> -->
             <!-- Product-->
             @foreach ($products as $product)
             <div class="grid-item">
                 <div class="product-card">
                     <a class="product-thumb" href="/products/{{ $product->id }}"><img src="{{$product->pic_thum()}}" style="width: 100%; height: 100%;"></a>
-                    <h3 class="product-title" style="padding-top: 10px;"><a href="/products/{{ $product->id }}">{{$product->title}}</a></h3>
+                    <h3 class="product-title"><a href="/products/{{ $product->id }}">{{$product->title}}</a></h3>
                     <h4 class="product-price">¥ {{$product->price_day}}/日</h4>
-                    <div class="product-buttons" style="padding-top: 1px;">
+                    <!-- <div class="product-buttons" style="padding-top: 1px;">
                         {{--<button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="いいね"><i class="icon-heart"></i></button>--}}
                         <a href="/products/{{ $product->id }}">
                         <button class="btn btn-outline-primary btn-sm" style="margin-right: 0px">詳細を見る</button>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             @endforeach
@@ -124,4 +124,13 @@
     </div>
 
 </div>
+<script>
+    (window.onload = function() {
+        e = document.getElementById('target');
+        // console.log(e.children);
+        for (var i = 0; i < e.children.length; i++) {
+            e.children[i].style = "width: 49%; height: 170px; display: inline-table;";
+        }
+    })();
+</script>
 @endsection
