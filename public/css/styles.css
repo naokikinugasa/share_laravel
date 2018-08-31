@@ -5648,7 +5648,7 @@ video {
   }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .isotope-grid.cols-6 .gutter-sizer, .isotope-grid.cols-5 .gutter-sizer, .isotope-grid.cols-4 .gutter-sizer, .isotope-grid.cols-3 .gutter-sizer, .isotope-grid.cols-2 .gutter-sizer {
     width: 0;
   }
@@ -5660,7 +5660,7 @@ video {
   .isotope-grid.cols-2 .grid-item {
     width: 100%;
   }
-}
+} */
 
 .isotope-grid.grid-no-gap .gutter-sizer {
   width: 0;
