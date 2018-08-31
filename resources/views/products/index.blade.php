@@ -108,7 +108,7 @@
             <div class="grid-item">
                 <div class="product-card">
                     <a class="product-thumb" href="/products/{{ $product->id }}"><img src="{{$product->pic_thum()}}" style="width: 100%; height: 100%;"></a>
-                    <h3 class="product-title" style="padding-top: 10px;"><a href="/products/{{ $product->id }}">{{$product->title}}</a></h3>
+                    <h3 class="product-title"><a href="/products/{{ $product->id }}">{{$product->title}}</a></h3>
                     <h4 class="product-price">¥ {{$product->price_day}}/日</h4>
                     <div class="product-buttons" style="padding-top: 1px;">
                         {{--<button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="いいね"><i class="icon-heart"></i></button>--}}
