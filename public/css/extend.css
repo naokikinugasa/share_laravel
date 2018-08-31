@@ -67,7 +67,7 @@
     font-size: 14px !important;
 }
 
-@media screen and (min-width:700px){
+@media screen and (min-width:700px),(-webkit-min-device-pixel-ratio: 2){
     .header-signup {
         display: inline-block;
         border: 1px solid #0099e8;
