@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/css/vendor.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/extend.css">
     <!-- Main Template Styles-->
-    <link id="mainStyles" rel="stylesheet" type="text/css" media="screen" href="/css/styles.min.css">
+    <link id="mainStyles" rel="stylesheet" type="text/css" media="screen" href="/css/styles.css">
     <!-- Modernizr-->
     <script src="/js/modernizr.min.js"></script>
     <script src="/js/jquery-3.3.1.js"></script>
