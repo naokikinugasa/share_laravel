@@ -106,17 +106,19 @@
             <!-- Product-->
             @foreach ($products as $product)
             <div class="grid-item">
+                <a href="/products/{{ $product->id }}" style="text-decoration: none;">
                 <div class="product-card">
-                    <a class="product-thumb" href="/products/{{ $product->id }}"><img src="{{$product->pic_thum()}}" style="width: 100%; height: 100%;"></a>
-                    <h3 class="product-title"><a href="/products/{{ $product->id }}">{{$product->title}}</a></h3>
+                    <div class="product-thumb"><img src="{{$product->pic_thum()}}" style="width: 100%; height: 100%;"></div>
+                    <h3 class="product-title">{{$product->title}}</h3>
                     <h4 class="product-price">¥ {{$product->price_day}}/日</h4>
                     <div class="product-buttons" style="padding-top: 1px;">
                         {{--<button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="いいね"><i class="icon-heart"></i></button>--}}
-                        <a href="/products/{{ $product->id }}">
+                        <!-- <a href="/products/{{ $product->id }}"> -->
                         <button class="btn btn-outline-primary btn-sm" style="margin-right: 0px">詳細を見る</button>
-                        </a>
+                        <!-- </a> -->
                     </div>
                 </div>
+                </a>
             </div>
             @endforeach
         </div>
